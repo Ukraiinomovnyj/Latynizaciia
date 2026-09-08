@@ -61,8 +61,8 @@ resolves to the latest version:
 > Ukraiinomovnyj. *Ukrainian Latynytsia: A Phonemic Latin Orthography for the
 > Ukrainian Language* (v4.0). Zenodo. <https://doi.org/10.5281/zenodo.19544126>
 
-The DOI for v4.0 specifically is
-[10.5281/zenodo.19548487](https://doi.org/10.5281/zenodo.19548487). Machine-readable
+The DOI for the v4.0.0 release specifically is
+[10.5281/zenodo.22665403](https://doi.org/10.5281/zenodo.22665403). Machine-readable
 citation metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## License

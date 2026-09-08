@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this orthography, please cite it as below."
+title: "Ukrainian Latynytsia: A Phonemic Latin Orthography for the Ukrainian Language"
+abstract: >-
+  A phonemic Latin orthography for the Ukrainian language, designed as a
+  structural mirror of the Ukrainian Cyrillic alphabet. It establishes a strict
+  one-to-one mapping between phonemes and graphemes with zero digraphs for native
+  Ukrainian phonemes: the trema marks palatalized and iotated vowels, the
+  apostrophe marks the palatalization of consonants, and the hacek marks the
+  three sibilants c, s, z. A structural, apolitical proposal fixed for priority
+  of authorship.
+type: software
+authors:
+  - name: "Ukraiinomovnyj"
+    website: "https://github.com/Ukraiinomovnyj"
+version: "4.0.0"
+date-released: "2026-04-13"
+license: "CC-BY-4.0"
+doi: "10.5281/zenodo.19544126"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19544126"
+    description: "Concept DOI — always resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.19548487"
+    description: "Version DOI — v4.0"
+repository-code: "https://github.com/Ukraiinomovnyj/Latynizaciia"
+url: "https://ukraiinomovnyj.github.io/Latynizaciia/"
+keywords:
+  - "Ukrainian language"
+  - "Latin alphabet"
+  - "romanization"
+  - "transliteration"
+  - "orthography"
+  - "phonemic orthography"
+  - "Cyrillic-to-Latin"
+  - "Latynka"
+  - "constructed script"
+  - "conlang"
+  - "linguistics"

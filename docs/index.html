@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ukrainian Latynytsia — Phonemic Latin Orthography for Ukrainian</title>
+<meta name="description" content="A phonemic Latin alphabet for the Ukrainian language: one letter per phoneme, a structural mirror of Cyrillic, zero digraphs. Full white paper, v4.0, CC BY 4.0.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ukraiinomovnyj">
+<link rel="canonical" href="https://ukraiinomovnyj.github.io/Latynizaciia/">
+<link rel="alternate" hreflang="uk" href="https://ukraiinomovnyj.github.io/Latynizaciia/">
+<link rel="alternate" hreflang="x-default" href="https://ukraiinomovnyj.github.io/Latynizaciia/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ukrainian Latynytsia — Phonemic Latin Orthography for Ukrainian">
+<meta property="og:description" content="A complete Latin alphabet for Ukrainian, built on one principle: one phoneme, one letter. A structural mirror of Cyrillic with zero digraphs. Full white paper, v4.0.">
+<meta property="og:url" content="https://ukraiinomovnyj.github.io/Latynizaciia/">
+<meta property="og:site_name" content="Ukrainian Latynytsia">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-04-13">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ukrainian Latynytsia — Phonemic Latin Orthography for Ukrainian">
+<meta name="twitter:description" content="A complete Latin alphabet for Ukrainian: one phoneme, one letter. A structural mirror of Cyrillic, zero digraphs. Full white paper, v4.0, CC BY 4.0.">
+
+<!-- Highwire Press tags: consumed by Zotero and other reference managers -->
+<meta name="citation_title" content="Ukrainian Latynytsia: A Phonemic Latin Orthography for the Ukrainian Language">
+<meta name="citation_author" content="Ukraiinomovnyj">
+<meta name="citation_publication_date" content="2026/04/13">
+<meta name="citation_online_date" content="2026/04/13">
+<meta name="citation_doi" content="10.5281/zenodo.19544126">
+<meta name="citation_language" content="uk">
+<meta name="citation_keywords" content="Ukrainian language; Latin alphabet; romanization; transliteration; orthography; phonemic orthography; Cyrillic-to-Latin; Latynka">
+<meta name="citation_abstract_html_url" content="https://ukraiinomovnyj.github.io/Latynizaciia/">
+<meta name="citation_public_url" content="https://ukraiinomovnyj.github.io/Latynizaciia/">
+<meta name="citation_technical_report_institution" content="Zenodo">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='13'%20fill='%232b6cb0'/%3E%3Ctext%20x='32'%20y='45'%20font-size='38'%20text-anchor='middle'%20fill='white'%20font-family='Georgia,serif'%3E%C3%A4%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Ukrainian Latynytsia: A Phonemic Latin Orthography for the Ukrainian Language",
+  "headline": "Ukrainian Latynytsia: A Phonemic Latin Orthography for the Ukrainian Language",
+  "alternativeHeadline": "Українська латиниця — технічна пропозиція фонемної латинізації української мови (версія 4.0)",
+  "inLanguage": "uk",
+  "author": {
+    "@type": "Person",
+    "name": "Ukraiinomovnyj",
+    "url": "https://github.com/Ukraiinomovnyj"
+  },
+  "datePublished": "2026-04-13",
+  "version": "4.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creativeWorkStatus": "Published",
+  "description": "A phonemic Latin script for the Ukrainian language, designed as a structural mirror of the Cyrillic alphabet. Each Ukrainian phoneme maps to exactly one Latin letter or diacritical variant, with zero digraphs for native phonemes. The trema on vowels and the apostrophe after consonants handle palatalization and iotation; the haček marks the sibilants č, š, ž. Four letters follow velar logic: X = х [x], H = г [ɦ], G = ґ [g]. The cluster щ is written šč. A technical, apolitical proposal, fixed for priority of authorship.",
+  "keywords": "Ukrainian language, Latin alphabet, Latynka, romanization, transliteration, orthography, phonemic orthography, Cyrillic-to-Latin, constructed script, conlang, linguistics",
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.19544126" },
+    { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.19548487" }
+  ],
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.19544126",
+    "https://github.com/Ukraiinomovnyj/Latynizaciia"
+  ],
+  "publisher": { "@type": "Organization", "name": "Zenodo", "url": "https://zenodo.org/" },
+  "url": "https://ukraiinomovnyj.github.io/Latynizaciia/"
+}
+</script>
+
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fdfdfc;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --rule: #d8dee4;
+  --accent: #2b6cb0;
+  --card: #f4f6f8;
+  --card-rule: #e2e7ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --fg: #e6e8ea;
+    --muted: #9aa4ad;
+    --rule: #2b3138;
+    --accent: #6ba7de;
+    --card: #1c2024;
+    --card-rule: #2b3138;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2.4rem 1.25rem 4rem; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+header.masthead { margin-bottom: 2rem; }
+header.masthead h1 {
+  font-size: 1.85rem;
+  line-height: 1.25;
+  margin: 0 0 .5rem;
+  letter-spacing: -0.01em;
+}
+header.masthead .native { color: var(--muted); font-size: 1.05rem; margin: 0 0 1rem; }
+header.masthead .tagline {
+  font-size: 1.05rem;
+  margin: 0 0 1.25rem;
+}
+.meta-links {
+  display: flex; flex-wrap: wrap; gap: .5rem .9rem;
+  font-size: .92rem; color: var(--muted);
+  padding: 0; margin: 0; list-style: none;
+}
+.pagenote {
+  font-size: .9rem; color: var(--muted);
+  border-left: 3px solid var(--rule); padding-left: .8rem; margin: 1.5rem 0 0;
+}
+
+section.overview {
+  background: var(--card);
+  border: 1px solid var(--card-rule);
+  border-radius: 10px;
+  padding: 1.4rem 1.5rem;
+  margin: 2rem 0;
+}
+section.overview h2 { margin-top: 0; font-size: 1.15rem; letter-spacing: .02em; text-transform: uppercase; color: var(--muted); }
+section.overview p { margin: .9rem 0; }
+section.overview p:last-child { margin-bottom: 0; }
+
+article h2 { font-size: 1.5rem; margin: 2.6rem 0 .8rem; padding-top: .4rem; border-top: 1px solid var(--rule); }
+article h3 { font-size: 1.2rem; margin: 1.8rem 0 .6rem; }
+article h4 { font-size: 1.02rem; margin: 1.3rem 0 .5rem; color: var(--muted); }
+article p { margin: .9rem 0; }
+
+.table-wrap { overflow-x: auto; margin: 1.2rem 0; border: 1px solid var(--rule); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { background: var(--card); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+
+footer.colophon { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-size: .92rem; color: var(--muted); }
+footer.colophon a { color: var(--accent); }
+footer.colophon p { margin: .6rem 0; }
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .wrap { padding: 1.6rem 1rem 3rem; }
+  header.masthead h1 { font-size: 1.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>Ukrainian Latynytsia — a phonemic Latin orthography for the Ukrainian language</h1>
+  <p class="native" lang="uk">Українська латиниця · технічна пропозиція фонемної латинізації · версія 4.0</p>
+  <p class="tagline"><strong>32 letters · 2 rules · 0 digraphs · 1 dead key.</strong> A complete Latin alphabet for Ukrainian, designed as a structural mirror of Cyrillic — not another passport or library romanization, but an orthography to be written in.</p>
+  <ul class="meta-links">
+    <li><a href="https://doi.org/10.5281/zenodo.19544126">DOI: 10.5281/zenodo.19544126</a></li>
+    <li><a href="https://github.com/Ukraiinomovnyj/Latynizaciia">Source on GitHub</a></li>
+    <li><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></li>
+  </ul>
+  <p class="pagenote" lang="en">This page: an English overview followed by the full white paper in Ukrainian. · Ця сторінка: англійський огляд, далі повний документ українською.</p>
+</header>
+
+<section class="overview" lang="en">
+  <h2>About this system</h2>
+  <p><strong>Ukrainian Latynytsia</strong> (Ukrainian: <span lang="uk"><em>латинка</em>, <em>латиниця</em></span>) is a complete Latin-script orthography for the Ukrainian language. It is not another romanization or transliteration standard for catalogues and road signs — systems such as ISO 9, BGN/PCGN or the Ukrainian national &ldquo;passport&rdquo; transliteration exist for identification, not for writing. This proposal is designed to be <em>written in</em>: a full alphabet with spelling rules, built on one principle — <strong>one phoneme, one letter</strong>.</p>
+  <p>The alphabet is a structural mirror of Ukrainian Cyrillic. Every Cyrillic function has an exact Latin counterpart, so conversion between the two scripts is reversible and fully algorithmic. The system uses <strong>32 active letters</strong> and just <strong>two rules</strong>. Palatalization and iotation are carried by the trema on vowels (я/ю/є/ьо → ä/ü/ë/ö, ї → ï) and the apostrophe after consonants (ь → &rsquo;). The haček marks the three sibilants č, š, ž as independent phonemes. Four letters are reassigned on velar logic — <strong>X = х, H = г, G = ґ</strong> — following Czech and international transcription practice. Ukrainian щ [ʂtʂ] is analysed as a two-phoneme cluster and written <strong>šč</strong>, which sets Ukrainian apart from Russian щ [ɕː].</p>
+  <p>The result has <strong>zero digraphs</strong> for native phonemes and needs a single dead key (the trema) for everyday typing; every trema letter already exists on German, French and Nordic keyboard layouts. Compared with the Polish model (sz, cz, szcz, ł, ń, ś …) the script is markedly more compact — <span lang="uk">Щебрешин</span> is <em>Ščebrešyn</em> here versus Polish <em>Szczebrzeszyn</em> — while staying close to the Czech use of the haček. Q and W are held in reserve for future extensions.</p>
+  <p>This is a technical, apolitical proposal — a ready-made orthographic tool, with authorship and date fixed for priority. Version 4.0 is archived on Zenodo under CC BY 4.0. <strong>The full white paper below is in Ukrainian.</strong></p>
+</section>
+
+<article lang="uk">
+<!-- DOC:START — generated by tools/build-landing.py, do not edit by hand -->
+<p><strong>УКРАЇНСЬКА ЛАТИНИЦЯ</strong></p>
+<p><em>Ukraïns'ka latynyca</em></p>
+<p>Версія 4.0</p>
+<p>Технічна пропозиція фонемної латинізації української мови</p>
+<p><strong>32 літери · 2 правила · 0 диграфів · 1 мертва клавіша (трема)</strong></p>
+<p>Україномовний</p>
+<p>2025</p>
+<p>Ліцензія: CC BY 4.0</p>
+<h2>Abstract</h2>
+<p>This document presents a phonemic Latin script for the Ukrainian language, designed as a structural mirror of the Cyrillic alphabet. The system maps each Ukrainian phoneme to exactly one Latin letter or diacritical variant, achieving zero digraphs for native phonemes. Two mechanisms handle palatalization and iotation: the trema (¨) on vowels and the apostrophe (') after consonants. The haček (ˇ) marks three sibilant phonemes (č, š, ž) that represent independent sounds rather than palatalized variants. The script uses 32 active letters with 2 reserved (Q, W) for future use. The affricate cluster šč represents щ [ʂtʂ], following the same logic as dž = дж and dz = дз. This is a technical proposal, not a political manifesto - it offers a ready-made orthographic tool should the need arise.</p>
+<h2>1. Вступ і мотивація</h2>
+<h3>1.1. Історичний контекст</h3>
+<p>Латинізація слов'янських мов - не новація, а історична норма для західної гілки. Чеська, польська, хорватська, словенська та словацька мови використовують латиницю, зберігаючи при цьому слов'янську фонологічну ідентичність. Перехід від кирилиці до латиниці здійснили румуни (XIX ст.), турки (1928), молдовани (1989), а процес латинізації казахської мови триває зараз.</p>
+<p>Українська мова історично мала контакти з латиницею: від "латинки" Йосипа Лозинського (1834) до різноманітних транслітераційних систем XX-XXI століть. Жодна з них, однак, не була спроектована як повноцінна орфографічна система з фонемним принципом.</p>
+<h3>1.2. Сучасний контекст</h3>
+<p>Війна Росії проти України, курс на європейську інтеграцію створюють унікальний історичний момент для переосмислення інструментів культурної ідентичності. Латиниця - один із таких інструментів: вона зближує Україну із західнослов'янськими сусідами та широшим європейським контекстом.</p>
+<p>Цей документ не закликає до негайного переходу. Він пропонує технічне рішення - ретельно спроектовану систему, яка може бути використана, коли суспільство визнає це доцільним. Авторство та дата фіксуються для пріоритету.</p>
+<h3>1.3. Цілі пропозиції</h3>
+<p>Створити фонемну латинську орфографію для української мови, яка: (1) зберігає принцип «одна фонема = одна літера»; (2) є структурним дзеркалом кирилиці; (3) мінімізує кількість діакритичних знаків; (4) доступна на стандартних клавіатурах; (5) не створює хибних асоціацій для читачів інших слов'янських латиниць.</p>
+<h2>2. Огляд існуючих систем латинізації</h2>
+<p>Існуючі системи транслітерації та романізації української мови можна поділити на три категорії.</p>
+<h3>2.1. Наукова транслітерація (ISO 9)</h3>
+<p>Міжнародний стандарт ISO 9 забезпечує оборотну транслітерацію кирилиці, але використовує велику кількість діакритик і не призначений для повсякденного письма. Наприклад, щ = šč, що збігається з нашим рішенням, але загальна система надто перевантажена для орфографічного використання.</p>
+<h3>2.2. Паспортна транслітерація (КМУ 2010)</h3>
+<p>Офіційна система для паспортів та дорожніх знаків. Використовує диграфи (sh, ch, zh, shch) і є необоротною: кілька кириличних літер можуть давати однаковий латинський запис. Придатна для ідентифікації, але не для орфографії.</p>
+<h3>2.3. Польська та чеська моделі</h3>
+<p>Польська модель активно використовує диграфи (sz, cz, szcz, ch) і спеціальні літери (ł, ń, ś, ź, ć). Чеська модель спирається на гачек (ˇ) для шиплячих і є значно компактнішою. Наша система бере за основу чеський підхід, розширюючи його тремою та апострофом для палаталізації.</p>
+<h3>2.4. Критерії порівняння</h3>
+<p>Ключові метрики для оцінки систем: (1) кількість диграфів; (2) оборотність (чи можна однозначно відновити кирилицю); (3) клавіатурна доступність; (4) середня кількість символів на слово; (5) відсутність хибних асоціацій для іншомовних читачів.</p>
+<h2>3. Дизайн-принципи</h2>
+<h3>3.1. Одна фонема = одна літера</h3>
+<p>Система повністю відмовляється від диграфів для позначення українських фонем. Кожен самостійний звук має рівно одне графічне позначення. Це досягається трьома механізмами: тремою (¨) для голосних, апострофом (') для м'якості приголосних та гачеком (ˇ) для трьох шиплячих фонем.</p>
+<h3>3.2. Структурна симетрія з кирилицею</h3>
+<p>Система є структурним дзеркалом кириличного алфавіту. Кожна функція кирилиці має точний аналог у латиниці: я/ю/є/ьо → ä/ü/ë/ö (трема); ь → апостроф; ї → ï; розділовий апостроф → апостроф перед трема-голосною. Ця симетрія забезпечує оборотність конверсії та зберігає інтуїцію носіїв мови.</p>
+<h3>3.3. Мінімізація діакритик</h3>
+<p>Використовуються лише дві діакритики: трема (¨) та гачек (ˇ). Трема - єдина мертва клавіша, необхідна для повсякденного введення. Гачек для č, š, ž доступний через compose-послідовності або як додаткова мертва клавіша. Усі літери з тремою (ä, ö, ü, ë, ï) вже присутні на німецькій, французькій та скандинавських розкладках.</p>
+<h3>3.4. Перепризначення літер: велярний принцип</h3>
+<p>Українська має чотири фонеми, які потребують нестандартного маппінгу: г [ɦ], ґ [g], х [x]. Рішення: H = г та G = ґ (як у чеській), X = х. Вибір X для [x] спирається на міжнародну конвенцію: грецька χ (хі) = [x], китайський піньїнь X = [ɕ], численні транскрипційні системи використовують X для велярного фрикатива.</p>
+<h3>3.5. Щ як кластер, а не фонема</h3>
+<p>Ключове рішення системи: українська щ [ʂtʂ] трактується як кластер двох фонем (ш + ч), а не як одинична фонема. Це відрізняє українську від російської, де щ = [ɕː] (один довгий звук). Запис: šč - дві літери для двох фонем, за тією самою логікою, що dž = дж і dz = дз. Принцип «один звук = одна літера» не порушується.</p>
+<p>Альтернативний запис: літера Q може бути використана як однолітерне позначення щ (Q = щ) для досягнення більшої компактності. Це рішення залишається відкритим для майбутніх версій системи. Детальніше - див. розділ 9.</p>
+<h2>4. Повний опис системи</h2>
+<h3>4.1. Два головних правила</h3>
+<h4>Правило 1: Трема (¨) на голосній</h4>
+<p>Пом'якшує попередню приголосну (як я/ю/є/ьо в кирилиці). На початку слова або після голосної дає йотацію [j + голосна].</p>
+<h4>Правило 2: Апостроф (') після приголосної</h4>
+<p>М'якість без голосної (як ь в кирилиці). Використовується тільки наприкінці слова або перед приголосною.</p>
+<h4>Мнемоніка</h4>
+<p>Є голосна після м'якої → трема на голосній (tä). Нема голосної → апостроф після приголосної (t'). Апостроф перед трема-голосною → розділовий (п'ять = p'ät').</p>
+<h3>4.2. Детальні правила</h3>
+<h4>Трема на голосній (ä, ë, ï, ö, ü)</h4>
+<p><strong>Після приголосної:</strong> пом'якшує її. täžko = тяжко, lüdyna = людина, söhodni = сьогодні.</p>
+<p><strong>На початку слова:</strong> [j + голосна]. äbluko = яблуко, ünak = юнак, ëdnis't' = єдність.</p>
+<p><strong>Після голосної:</strong> [j + голосна]. moä = моя, tvoë = твоє.</p>
+<p><strong>Після розділового апострофа:</strong> йотація, приголосна залишається твердою. p'ät' = п'ять, m'äso = м'ясо.</p>
+<p><strong>Ï (ï) = ї:</strong> завжди [ji], незалежно від позиції. Ukraïna, ïžak, vyïzd.</p>
+<h4>Апостроф після приголосної (= м'який знак)</h4>
+<p><strong>На кінці слова:</strong> kin' = кінь, včytel' = вчитель, sil' = сіль, misc' = місць.</p>
+<p><strong>Перед приголосною:</strong> L'viv = Львів, t'mänyj = тьмяний.</p>
+<h4>Як розрізнити два типи апострофа</h4>
+<p>Правило однозначне: апостроф перед трема-голосною (ä, ü, ë, ï) = розділовий. Апостроф перед приголосною або на кінці слова = м'якість. Ці два випадки ніколи не перетинаються.</p>
+<h4>Перепризначені літери</h4>
+<p><strong>X = х [x]</strong> - велярний фрикативний. Xarkiv = Харків, xlib = хліб.</p>
+<p><strong>H = г [ɦ]</strong> - фрикативний (як у чеській). hovoryty = говорити.</p>
+<p><strong>G = ґ [g]</strong> - зімкнений. ganok = ґанок.</p>
+<h4>Гачек - тільки для шиплячих</h4>
+<p>Č č = ч [tʂ], Š š = ш [ʂ], Ž ž = ж [ʐ]. Гачек позначає окремі фонеми, а не м'які варіанти.</p>
+<h4>Щ = šč (кластер)</h4>
+<p>Українська щ [ʂtʂ] записується як šč - послідовність двох фонем. Приклади: ščastä = щастя, plošča = площа, boršč = борщ, šče = ще.</p>
+<h4>Подовження та дж/дз</h4>
+<p>Подовжені м'які приголосні пишуться подвоєнням + трема: žyttä = життя, znannä = знання, sillü = сіллю.</p>
+<p>Дж та дз пишуться як dž та dz: džmil' = джміль, dzvin = дзвін. Двозначність (одна чи дві фонеми) ідентична кириличній.</p>
+<h3>4.3. Повний алфавіт - 32 літери</h3>
+<div class="table-wrap"><table>
+<thead><tr><th><strong>Латиниця</strong></th><th><strong>Кирилиця</strong></th><th><strong>IPA</strong></th><th><strong>Тип</strong></th></tr></thead>
+<tbody>
+<tr><td>A a</td><td>А а</td><td>[a]</td><td></td></tr>
+<tr><td>Ä ä</td><td>Я я / ьа</td><td>[ja] / [ʲa]</td><td>Трема-голосна</td></tr>
+<tr><td>B b</td><td>Б б</td><td>[b]</td><td></td></tr>
+<tr><td>C c</td><td>Ц ц</td><td>[ts]</td><td></td></tr>
+<tr><td>Č č</td><td>Ч ч</td><td>[tʂ]</td><td>Гачек</td></tr>
+<tr><td>D d</td><td>Д д</td><td>[d]</td><td></td></tr>
+<tr><td>E e</td><td>Е е</td><td>[ɛ]</td><td></td></tr>
+<tr><td>Ë ë</td><td>Є є / ье</td><td>[je] / [ʲe]</td><td>Трема-голосна</td></tr>
+<tr><td>F f</td><td>Ф ф</td><td>[f]</td><td></td></tr>
+<tr><td>G g</td><td>Ґ ґ</td><td>[g]</td><td>Перепризначена</td></tr>
+<tr><td>H h</td><td>Г г</td><td>[ɦ]</td><td>Перепризначена</td></tr>
+<tr><td>I i</td><td>І і</td><td>[i]</td><td></td></tr>
+<tr><td>Ï ï</td><td>Ї ї</td><td>[ji]</td><td>Трема-голосна</td></tr>
+<tr><td>J j</td><td>Й й</td><td>[j]</td><td></td></tr>
+<tr><td>K k</td><td>К к</td><td>[k]</td><td></td></tr>
+<tr><td>L l</td><td>Л л</td><td>[l]</td><td></td></tr>
+<tr><td>M m</td><td>М м</td><td>[m]</td><td></td></tr>
+<tr><td>N n</td><td>Н н</td><td>[n]</td><td></td></tr>
+<tr><td>O o</td><td>О о</td><td>[ɔ]</td><td></td></tr>
+<tr><td>Ö ö</td><td>ьо</td><td>[ʲo]</td><td>Трема-голосна</td></tr>
+<tr><td>P p</td><td>П п</td><td>[p]</td><td></td></tr>
+<tr><td>R r</td><td>Р р</td><td>[r]</td><td></td></tr>
+<tr><td>S s</td><td>С с</td><td>[s]</td><td></td></tr>
+<tr><td>Š š</td><td>Ш ш</td><td>[ʂ]</td><td>Гачек</td></tr>
+<tr><td>T t</td><td>Т т</td><td>[t]</td><td></td></tr>
+<tr><td>U u</td><td>У у</td><td>[u]</td><td></td></tr>
+<tr><td>Ü ü</td><td>Ю ю / ьу</td><td>[ju] / [ʲu]</td><td>Трема-голосна</td></tr>
+<tr><td>V v</td><td>В в</td><td>[v/w]</td><td></td></tr>
+<tr><td>X x</td><td>Х х</td><td>[x]</td><td>Перепризначена</td></tr>
+<tr><td>Y y</td><td>И и</td><td>[ɪ]</td><td></td></tr>
+<tr><td>Z z</td><td>З з</td><td>[z]</td><td></td></tr>
+<tr><td>Ž ž</td><td>Ж ж</td><td>[ʐ]</td><td>Гачек</td></tr>
+</tbody>
+</table></div>
+<p><strong>Кластер:</strong> Щ щ [ʂtʂ] записується як šč (дві літери для двох фонем).</p>
+<p><strong>М'якість приголосних:</strong> апостроф (') після t, d, s, z, n, l, r, c = ть, дь, сь, зь, нь, ль, рь, ць.</p>
+<p><strong>Резервні літери:</strong> Q та W - не використовуються в поточній версії, зарезервовані для можливих розширень (див. розділ 9).</p>
+<h3>4.4. Симетрія з кирилицею</h3>
+<div class="table-wrap"><table>
+<thead><tr><th><strong>Функція</strong></th><th><strong>Кирилиця</strong></th><th><strong>Латиниця v4</strong></th></tr></thead>
+<tbody>
+<tr><td>М'якість + голосна</td><td>я ю є ьо</td><td>ä ü ë ö</td></tr>
+<tr><td>Йотація [ji]</td><td>ї</td><td>ï</td></tr>
+<tr><td>М'якість без голосної</td><td>ь</td><td>' (апостроф)</td></tr>
+<tr><td>Розділовий знак</td><td>' (апостроф)</td><td>' (перед ä ü ë ï)</td></tr>
+<tr><td>Голосні</td><td>а е и і о у</td><td>a e y i o u</td></tr>
+<tr><td>Шиплячі</td><td>ч ш ж</td><td>č š ž</td></tr>
+<tr><td>Велярний [x]</td><td>х</td><td>x</td></tr>
+<tr><td>Щ [ʂtʂ]</td><td>щ</td><td>šč</td></tr>
+</tbody>
+</table></div>
+<h2>5. Верифікація</h2>
+<h3>5.1. Таблиця прикладів</h3>
+<div class="table-wrap"><table>
+<thead><tr><th><strong>Кирилиця</strong></th><th><strong>Латиниця v4</strong></th><th><strong>Пояснення</strong></th></tr></thead>
+<tbody>
+<tr><td>тяжко</td><td>täžko</td><td>трема пом'якшує t</td></tr>
+<tr><td>людина</td><td>lüdyna</td><td>трема пом'якшує l</td></tr>
+<tr><td>сьогодні</td><td>söhodni</td><td>ö = ьо</td></tr>
+<tr><td>льон</td><td>lön</td><td>ö = ьо</td></tr>
+<tr><td>яблуко</td><td>äbluko</td><td>ä на початку = ja</td></tr>
+<tr><td>юнак</td><td>ünak</td><td>ü на початку = ju</td></tr>
+<tr><td>єдність</td><td>ëdnis't'</td><td>ë на початку = je</td></tr>
+<tr><td>моя</td><td>moä</td><td>ä після голосної = ja</td></tr>
+<tr><td>Україна</td><td>Ukraïna</td><td>ï = ї завжди</td></tr>
+<tr><td>Київ</td><td>Kyïv</td><td>ï = ї</td></tr>
+<tr><td>п'ять</td><td>p'ät'</td><td>апостроф розділовий + ä</td></tr>
+<tr><td>щастя</td><td>ščastä</td><td>šč = щ, tä = тя</td></tr>
+<tr><td>площа</td><td>plošča</td><td>šč = щ</td></tr>
+<tr><td>Харків</td><td>Xarkiv</td><td>X = х</td></tr>
+<tr><td>хліб</td><td>xlib</td><td>X = х</td></tr>
+<tr><td>вчитель</td><td>včytel'</td><td>' = ь (кінець)</td></tr>
+<tr><td>кінь</td><td>kin'</td><td>' = ь (кінець)</td></tr>
+<tr><td>сіль</td><td>sil'</td><td>' = ь (кінець)</td></tr>
+<tr><td>Львів</td><td>L'viv</td><td>' = ь (перед пригол.)</td></tr>
+<tr><td>тьмяний</td><td>t'mänyj</td><td>' = ь (перед пригол.)</td></tr>
+<tr><td>місць</td><td>misc'</td><td>' = ь (кінець)</td></tr>
+<tr><td>життя</td><td>žyttä</td><td>подвоєння + трема</td></tr>
+<tr><td>знання</td><td>znannä</td><td>подвоєння + трема</td></tr>
+<tr><td>Запоріжжя</td><td>Zaporižžä</td><td>подвоєне žž</td></tr>
+<tr><td>джміль</td><td>džmil'</td><td>dž = дж</td></tr>
+<tr><td>дзвін</td><td>dzvin</td><td>dz = дз</td></tr>
+<tr><td>борщ</td><td>boršč</td><td>šč на кінці</td></tr>
+<tr><td>що</td><td>ščo</td><td>šč = щ</td></tr>
+<tr><td>ще</td><td>šče</td><td>šč = щ</td></tr>
+<tr><td>сядь</td><td>säd'</td><td>sä = ся, d' = дь</td></tr>
+<tr><td>з'їсти</td><td>z'ïsty</td><td>апостроф + ï</td></tr>
+<tr><td>м'ясо</td><td>m'äso</td><td>апостроф розділовий</td></tr>
+<tr><td>Григорій</td><td>Hryhorij</td><td>H = г</td></tr>
+<tr><td>ґанок</td><td>ganok</td><td>G = ґ</td></tr>
+<tr><td>Слава Україні!</td><td>Slava Ukraïni!</td><td></td></tr>
+</tbody>
+</table></div>
+<h3>5.2. Літературні тексти</h3>
+<h4>Гімн України</h4>
+<p><em>Ще не вмерла України ні слава, ні воля,</em></p>
+<p><strong>Šče ne vmerla Ukraïny ni slava, ni volä,</strong></p>
+<p><em>Ще нам, браття молодії, усміхнеться доля.</em></p>
+<p><strong>Šče nam, brattä molodïï, usmixnet'sä dolä.</strong></p>
+<h4>Шевченко, «Заповіт»</h4>
+<p><em>Як умру, то поховайте / Мене на могилі,</em></p>
+<p><strong>Äk umru, to poxovajte / Mene na mohyli,</strong></p>
+<p><em>Серед степу широкого, / На Вкраїні милій.</em></p>
+<p><strong>Sered stepu šyrokoho, / Na Vkraïni mylij.</strong></p>
+<h4>Конституція, стаття 1</h4>
+<p><em>Україна є суверенна і незалежна, демократична, соціальна, правова держава.</em></p>
+<p><strong>Ukraïna ë suverenna i nezaležna, demokratyčna, social'na, pravova deržava.</strong></p>
+<h4>Побутовий текст</h4>
+<p><em>Сьогодні чудова погода. Людина йде вулицею, їсть яблуко і думає про щастя. Життя прекрасне!</em></p>
+<p><strong>Söhodni čudova pohoda. Lüdyna jde vulyceü, ïst' äbluko i dumaje pro ščastä. Žyttä prekrasne!</strong></p>
+<h4>Географія</h4>
+<p><em>Київ, Харків, Львів, Одеса, Дніпро, Запоріжжя, Вінниця, Хмельницький</em></p>
+<p><strong>Kyïv, Xarkiv, L'viv, Odesa, Dnipro, Zaporižžä, Vinnyca, Xmel'nyc'kyj</strong></p>
+<h2>6. Порівняння систем</h2>
+<div class="table-wrap"><table>
+<thead><tr><th><strong>Звук</strong></th><th><strong>Кирилиця</strong></th><th><strong>Наша v4</strong></th><th><strong>Польська</strong></th><th><strong>Чеська</strong></th></tr></thead>
+<tbody>
+<tr><td>[ʂ] ш</td><td>ш</td><td>š</td><td>sz</td><td>š</td></tr>
+<tr><td>[ʐ] ж</td><td>ж</td><td>ž</td><td>ż / rz</td><td>ž</td></tr>
+<tr><td>[tʂ] ч</td><td>ч</td><td>č</td><td>cz</td><td>č</td></tr>
+<tr><td>[ʂtʂ] щ</td><td>щ</td><td>šč</td><td>szcz</td><td>-</td></tr>
+<tr><td>[x] х</td><td>х</td><td>x</td><td>ch</td><td>ch</td></tr>
+<tr><td>[ɦ] г</td><td>г</td><td>h</td><td>-</td><td>h</td></tr>
+<tr><td>[g] ґ</td><td>ґ</td><td>g</td><td>g</td><td>-</td></tr>
+<tr><td>[tʲ] ть</td><td>ть</td><td>t'</td><td>ci</td><td>ť</td></tr>
+<tr><td>[sʲ] сь</td><td>сь</td><td>s'</td><td>ś / si</td><td>-</td></tr>
+<tr><td>[nʲ] нь</td><td>нь</td><td>n'</td><td>ń / ni</td><td>ň</td></tr>
+<tr><td>[lʲ] ль</td><td>ль</td><td>l'</td><td>-</td><td>-</td></tr>
+<tr><td>[ja] я</td><td>я</td><td>ä</td><td>ja</td><td>ja</td></tr>
+<tr><td>[ju] ю</td><td>ю</td><td>ü</td><td>ju</td><td>-</td></tr>
+<tr><td>[je] є</td><td>є</td><td>ë</td><td>je</td><td>-</td></tr>
+<tr><td>[ji] ї</td><td>ї</td><td>ï</td><td>-</td><td>-</td></tr>
+</tbody>
+</table></div>
+<p><strong>Тест «Щебрешин»:</strong> Кирилиця: Щебрешин (9 символів). v4: Ščebrešyn (10). Польська: Szczebrzeszyn (14). Економія vs польської: 29%.</p>
+<h2>7. Практичні аспекти</h2>
+<h3>7.1. Клавіатура</h3>
+<p>Система потребує одну мертву клавішу - трему (¨). Апостроф є на кожній клавіатурі. Гачек для č, š, ž доступний через compose-послідовності або як додаткова мертва клавіша. Усі трема-літери (ä, ö, ü, ë, ï) уже наявні на німецькій, французькій та скандинавських розкладках. Усі символи присутні в Unicode.</p>
+<h3>7.2. Unicode-сумісність</h3>
+<p>Кожна літера системи - це стандартний символ Unicode, а не комбінація базової літери з діакритикою. Це гарантує коректне відображення, сортування, пошук та індексацію у всіх сучасних системах.</p>
+<h3>7.3. Алгоритм конверсії</h3>
+<p>Конверсія кирилиця → латиниця та зворотна є повністю алгоритмізовною. Оборотність системи дозволяє створити автоматичний конвертер без втрати інформації. Основні правила конверсії: (1) пряма заміна за таблицею алфавіту; (2) контекстний аналіз для м'якого знака (ь → апостроф); (3) контекстний аналіз для я/ю/є/ї → трема-голосні. Реалізація конвертера - окремий технічний додаток до цього документа.</p>
+<h2>8. Обмеження та відкриті питання</h2>
+<h3>8.1. Подвійна функція апострофа</h3>
+<p>Апостроф виконує дві ролі: м'якість (перед приголосною/кінець слова) та розділовий знак (перед трема-голосною). Хоча контекст завжди однозначний, візуально це один і той самий символ. Можливе рішення - використання різних символів (наприклад, ' для м'якості та ' для розділового), але це ускладнює введення.</p>
+<h3>8.2. Двозначність dž/dz</h3>
+<p>Запис dž і dz не розрізняє африкати (джміль, дзвін) та послідовності двох фонем (підживити, підзолити). Ця двозначність ідентична кириличній і є успадкованою, а не новою проблемою. Можливий напрямок вирішення - введення окремих літер для африкатів у майбутніх версіях.</p>
+<h3>8.3. Візуальна вага šč</h3>
+<p>Кластер šč для позначення щ візуально важкий, особливо у високочастотних словах: ščo (що), šče (ще). Це свідома ціна за звільнення X для більш інтуїтивного маппінгу X = х та збереження теоретичної чистоти (дві фонеми → дві літери). Альтернативне рішення - використання Q для щ - описане в розділі 9.</p>
+<h2>9. Резервні літери та альтернативи</h2>
+<h3>9.1. Q - потенційне позначення щ</h3>
+<p>Літера Q не використовується в основній системі і може бути задіяна як однолітерне позначення щ. Це дозволило б скоротити запис високочастотних слів: qo = що, qe = ще, qastä = щастя, ploqa = площа, borq = борщ. Вибір між šč та Q залишається відкритим і залежить від пріоритету: теоретична чистота (šč) чи практична компактність (Q).</p>
+<h3>9.2. W - відкритий резерв</h3>
+<p>Літера W залишається повністю вільною. Можливі майбутні застосування: (1) позначення алофона [w] для В у певних позиціях (якщо літературна норма визнає це розрізнення); (2) адаптація для діалектних записів; (3) запозичення з інших мов. Наявність вільної літери в алфавіті забезпечує гнучкість системи для майбутнього розвитку.</p>
+<h2>10. Підсумок</h2>
+<p><strong>32 літери</strong> (27 базових + 5 трема-голосних), з яких 3 мають гачек (č, š, ž).</p>
+<p><strong>Апостроф</strong> виконує дві функції: м'якість (перед приголосною/кінець слова) та розділовий знак (перед трема-голосною). Контекст завжди однозначний.</p>
+<p><strong>Перепризначені літери:</strong> X = х, H = г, G = ґ.</p>
+<p><strong>Кластер:</strong> Щ = šč (дві фонеми, дві літери).</p>
+<p><strong>Резервні:</strong> Q (потенційно щ), W (відкритий резерв).</p>
+<p><strong>0 диграфів</strong> для позначення українських фонем (dž та dz - успадкована двозначність з кирилиці).</p>
+<hr>
+<p><em>Цей документ є технічною пропозицією, розповсюджується під ліцензією CC BY 4.0 та зафіксований для пріоритету авторства. Зворотний зв'язок вітається.</em></p>
+<!-- DOC:END -->
+</article>
+
+<footer class="colophon" lang="en">
+  <p><strong>Cite as:</strong> Ukraiinomovnyj. <em>Ukrainian Latynytsia: A Phonemic Latin Orthography for the Ukrainian Language</em> (v4.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.19544126">https://doi.org/10.5281/zenodo.19544126</a> (concept DOI; v4.0 = <a href="https://doi.org/10.5281/zenodo.19548487">10.5281/zenodo.19548487</a>).</p>
+  <p>© 2025 Ukraiinomovnyj. Text licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. This page is generated from <a href="https://github.com/Ukraiinomovnyj/Latynizaciia/blob/main/ukrainian-latynytsia-v4.md"><code>ukrainian-latynytsia-v4.md</code></a>.</p>
+</footer>
+
+</div>
+</body>
+</html>
